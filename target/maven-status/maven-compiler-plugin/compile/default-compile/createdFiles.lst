@@ -1,0 +1,4 @@
+com/howtodoinjava/model/User.class
+com/howtodoinjava/model/Users.class
+com/howtodoinjava/client/http/DemoHttpRESTfulClient.class
+com/howtodoinjava/service/UserService.class
