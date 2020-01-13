@@ -25,10 +25,13 @@ public class DemoHttpRESTfulClient
 	public static void main(String[] args) throws Exception 
 	{
 		//Demo Get request
-		demoGetRESTAPI();
+		//demoGetRESTAPI();
 		
 		//Demo Post request
 		demoPostRESTAPI();
+		
+		//Demo Get request
+		//demoGetRESTAPI();
 	}
 	
 	public static void demoGetRESTAPI() throws Exception 
@@ -37,13 +40,13 @@ public class DemoHttpRESTfulClient
 		{
 			//Define a HttpGet request; You can choose between HttpPost, HttpDelete or HttpPut also.
 			//Choice depends on type of method you will be invoking.
-			//HttpGet getRequest = new HttpGet("http://localhost:8080/RESTfulDemoApplication/user-management/users/10");
-			//
 			
-			HttpGet getRequest = new HttpGet("https://petstore.swagger.io/v2/pet/989898999123");
+			HttpGet getRequest = new HttpGet("http://localhost:8080/RESTfulDemoApplication/user-management/users/100");
+			
+			//HttpGet getRequest = new HttpGet("https://petstore.swagger.io/v2/pet/989898999123");
 			
 			//Set the API media type in http accept header
-			getRequest.addHeader("accept", "application/json");
+			getRequest.addHeader("accept", "application/xml");
 			 
 			//Send the request; It will immediately return the response in HttpResponse object
 			HttpResponse response = httpClient.execute(getRequest);
